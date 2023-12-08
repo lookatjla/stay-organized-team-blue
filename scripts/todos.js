@@ -39,7 +39,7 @@ function viewTasks(todos) {
   let html = "";   // "<h2>TODOS:</h2><div>3</div><div>3</div><div>3</div>"
   for (let i = 0; i < todos.length; i++) {
     const task = todos[i];
-    html += `<p>Task: ${task.id}, ${task.category}, ${task.description}<p>`
+    html += `<p>${task.category}: ${task.description}<p>`
   }
      const displayTask = document.getElementById("displayTask");
   displayTask.innerHTML = html;
